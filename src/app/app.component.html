@@ -1,17 +1,43 @@
-<p>
-  Puntos de venta de la GoodFellas
-</p>
-<ul class ="nav">
-<li class="nav-item" >
-  <a class= "nav-link active" routerLink="punto-venta/list" routerLinkActive ="active">Punto Venta </a>
-</li>
-<li class="nav-item" >
-  <a class= "nav-link active" routerLink="punto-venta/add" routerLinkActive ="active">Crear </a>
-</ul>
-<div class="continer-fluid">
-  <div class="border m-5 row">
+<div class="container-fluid">
+	<nav class=" navbar-light bg-light">
+	<div class="row">
     <div class="col">
-      <router-outlet></router-outlet>
+  	<a class="navbar-brand && text-center" href="#"> 
+			<div class="form-inline">
+				<p class="text-center">
+					GoodFellas
+				</p>
+			</div>
+		</a>
     </div>
-  </div>
+	</div>
+</nav>   
 </div>
+<div class="container-fluid">
+  <nav class=" navbar-light bg-light">
+   <div class="w-100"></div>
+    <div class="col">
+		    <ul class="nav">
+			  <li class="nav-item">
+				<div class="btn-group" role="group" aria-label="Basic example">
+					<button type="button" class="btn btn-outline-danger && nav-link" routerLink="punto-venta/list" routerLinkActive ="active">Punto venta</button>
+          <button type="button" class="btn btn-outline-danger && nav-link" routerLink="marca/list" routerLinkActive ="active">Marcas</button>
+          <button type="button" class="btn btn-outline-danger && nav-link" routerLink="modelo/list" routerLinkActive ="active">Modelos</button>
+          <button type="button" class="btn btn-outline-danger && nav-link" routerLink="automovil/list" routerLinkActive ="active">Automovil</button>
+          <button type="button" class="btn btn-outline-danger && nav-link" routerLink="registros/list" routerLinkActive ="active">Registros</button>
+          <button type="button" class="btn btn-outline-danger && nav-link" routerLink="quejasReclamos/list" routerLinkActive ="active">Quejas</button>
+        </div>
+        </li>
+        </ul> <br>
+    </div>
+    <div class="w-100"></div>
+   <div class="col">
+      <router-outlet></router-outlet>
+      </div>
+  </nav>
+</div>
+
+
+
+
+

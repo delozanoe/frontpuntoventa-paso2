@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="col-md-5">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>  
+                    <th> Modelo </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let i of modelos">
+                  <td> {{i.modeloId}}</td>
+                <td style="cursor pointer;"> <a class="figure-caption" routerLink='../{{i.nombre}}'> {{i.nombre}}</a>
+                </td>
+                
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
